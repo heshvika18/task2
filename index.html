@@ -15,11 +15,29 @@
 </html>
 <script type="text/javascript">
 function play(){
-  var vid=document.getElementById('video');
-  vid.play();
+  var audio=document.getElementById('audio');
+  audio.play();
 }
 function pause(){
-  var vid=document.getElementById('video');
-  vid.pause();
+  var audio=document.getElementById('audio');
+  audio.pause();
+}
+</script>
+<audio src="audioplayback.mp4" autoplay controls id="audio">
+</audio>
+<br>
+<button type="button" name="button" onclick="play()">play</button>
+<button type="button" name="button" onclick="pause()">pause</button>
+
+</body>
+</html>
+<script type="text/javascript">
+function play(){
+var vid=document.getElementById('audio');
+audio.play();
+}
+function pause(){
+var vid=document.getElementById('audio');
+vid.pause();
 }
 </script>
